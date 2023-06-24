@@ -46,8 +46,11 @@ export default {
     },
     searchArticle() {
       const _this = this
+      var parameters = new Object()
+      parameters.keyword = _this.$store.state.keyword
+      parameters.router = this.$route.params.router
       _this.$store
-          .dispatch('searchArticles', _this.$store.state.keyword)
+          .dispatch('searchArticles', parameters)
           .then(function (response) {
             if(response == null) return
             _this.$store.state.searchArticles = response

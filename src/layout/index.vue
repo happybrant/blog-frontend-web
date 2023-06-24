@@ -36,6 +36,7 @@
     <Footer />
     <!-- 搜索框 -->
     <BaseSearchCard />
+  
   </div>
 
 </template>

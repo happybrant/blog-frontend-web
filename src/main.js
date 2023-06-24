@@ -1,3 +1,5 @@
+import '@/assets/fonts/font.css';
+import '@/styles/atom-one-light.min.css';
 import '@/styles/default.scss'; // global css
 import 'font-awesome/css/font-awesome.min.css'; //图标样式
 import Vue from 'vue';

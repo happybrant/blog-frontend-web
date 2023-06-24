@@ -20,10 +20,10 @@ export function getAboutArticle(router) {
     params: router
   });
 }
-export function searchArticles(keyword) {
+export function searchArticles(data) {
   return request({
     url: '/article/searchArticles',
     method: 'get',
-    params: {keyword:keyword}
+    params: data
   });
 }
