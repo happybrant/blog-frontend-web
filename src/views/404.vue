@@ -216,42 +216,37 @@
 </template>
 
 <script>
-
 export default {
   name: 'Page404',
   data() {
     return {
-      router:''
+      router: '',
     }
   },
   computed: {
     message() {
-      console.log(this.$store.state.tempRoute,)
+      console.log(this.$store.state.tempRoute)
       return 'The webmaster said that you can not enter this page...'
     },
   },
   methods: {
     getDefaultRouting() {
-      const _this = this   
+      const _this = this
       const currentRouter = _this.$store.state.currentRouter
-      if(currentRouter) {
-        _this.router = "#/" + currentRouter + "/articles" 
-      }
-      else {
-        _this.$store
-        .dispatch('getDefaultRouting')
-        .then(function (response) {
-          if (response != null ) {
-             _this.router = "#/" + response + "/articles" 
+      if (currentRouter) {
+        _this.router = '#/' + currentRouter + '/articles'
+      } else {
+        _this.$store.dispatch('getDefaultRouting').then(function (response) {
+          if (response != null) {
+            _this.router = '#/' + response + '/articles'
           }
         })
       }
-     
     },
   },
   mounted() {
     this.getDefaultRouting()
-  }
+  },
 }
 </script>
 

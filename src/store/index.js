@@ -118,7 +118,6 @@ const mutations = {
       }
       // 第一层只遍历根元素
       state.catalogues = hLabelobjs.filter(item => item.isRoot)
-      console.log(state.catalogues)
     }
   }
 };
