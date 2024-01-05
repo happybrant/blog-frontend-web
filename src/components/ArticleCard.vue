@@ -1,9 +1,9 @@
 <template lang="">
   <div class="card" style="transition: opacity 0.3s ease-out 0s, transform 0.3s ease-out 0s; opacity: 1; transform-origin: center top;">
     <div v-if="article.coverUrl" class="card-image">
-      <a class="image is-7by3" href="/hexo-theme-icarus/uncategorized/getting-started-with-icarus/">
-        <img  class="fill" :src="article.coverUrl" alt="Getting Started with Icarus">
-      </a>
+      <router-link :to="{path:'/' + router + '/article/' + article.id}"  class="image is-7by3">
+          <img  class="fill" :src="article.coverUrl" alt="Getting Started with Icarus">
+      </router-link> 
     </div>
     <article class="card-content article" role="article">
       <div class="article-meta is-size-7 is-uppercase level is-mobile">
