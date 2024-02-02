@@ -42,9 +42,9 @@
           </div>
         </div>
       </nav>
-      <div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/happybryant" target="_blank" rel="noopener">关注我</a></div>
+      <div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/happybrant" target="_blank" rel="noopener">关注我</a></div>
       <div class="level is-mobile is-multiline">
-        <a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/happybryant">
+        <a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/happybrant">
          <i class="fa fa-github"></i>
         </a>
       </div>
